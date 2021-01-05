@@ -43,17 +43,34 @@ a.underline:hover
     /* color: orangered !important; */
 }
 
-.parallax
+@media screen and (max-width: 400px)
 {
-    /* Set a specific height */
-    height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: cover;
+    .parallax
+    {
+        /* Set a specific height */
+        height: 100%;
+        /* width: 300px; */
+        /* Create the parallax scrolling effect */
+        /* background-attachment: fixed; */
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
+@media screen and (min-width: 400px)
+{
+    .parallax
+    {
+        /* Set a specific height */
+        height: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
 
 .fade
 {
@@ -99,7 +116,7 @@ header .content {
     .homee
     {
         font-family: 'Inter', sans-serif;
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 700;
         line-height: 1.4;
         padding: 15%;
@@ -172,7 +189,7 @@ header .content {
         text-align: center;
         align-items: center;
         justify-content: center;
-        font-size: 42px;
+        font-size: 35px;
         padding: 20%;
     }
 }
