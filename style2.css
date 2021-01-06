@@ -1,0 +1,51 @@
+.navbar 
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.navbar .navbar-nav>li>a
+{
+    color: black;
+}
+
+.navbar-static-top {
+    z-index: 1000;
+    border-width: 0px !important;
+}
+
+a.underline:hover
+{
+    background-color: ghostwhite !important;
+    /* color: orangered !important; */
+}
+
+.contact
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.fa 
+{
+    font-size: 30px !important;
+    width: 30px !important;
+    margin: 5% !important;
+    text-align: center !important;
+    text-decoration: none !important;
+  }
+
+  .fa:hover {
+    color: orangered;
+}
+
+.fa-facebook-official, .fa-google, .fa-instagram 
+{
+  color: black;
+}
