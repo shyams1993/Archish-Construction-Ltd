@@ -31,11 +31,37 @@ a.underline:hover
     /* color: orangered !important; */
 }
 
+.findus
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;    
+}
+
 .contact
 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
+    font-size: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    .findus {
+      font-size: 18px;
+    }
+    .contact
+    {
+        font-size: 14px;
+    }
+    .fa 
+    {
+        font-size: 20px !important;
+        width: 20px !important;
+        margin: 2% !important;
+        text-align: center !important;
+        text-decoration: none !important;
+    }
+  }
 
 .fa 
 {
@@ -91,7 +117,7 @@ a.underline:hover
   /* Create two columns that float next to eachother */
   .column 
   {
-    width: 50%;
+    width: 100%;
     margin-top: 6px;
     padding: 20px;
   }
