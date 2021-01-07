@@ -1,0 +1,38 @@
+body
+{
+    background-image: url(image0.jpeg);   
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar 
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: ghostwhite;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.navbar .navbar-nav>li>a
+{
+    color: black;
+}
+
+.navbar-static-top {
+    z-index: 1000;
+    border-width: 0px !important;
+}
+
+a.underline:hover
+{
+    background-color: ghostwhite !important;
+    /* color: orangered !important; */
+}
