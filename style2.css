@@ -31,11 +31,30 @@ a.underline:hover
     /* color: orangered !important; */
 }
 
+.fa 
+{
+    font-size: 30px !important;
+    width: 30px !important;
+    margin: 5% !important;
+    text-align: center !important;
+    text-decoration: none !important;
+  }
+
+  .fa:hover {
+    color: orangered;
+}
+
+.fa-facebook-official, .fa-google, .fa-instagram 
+{
+  color: black;
+}
+
 .findus
 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 24px;    
+    font-size: 24px;
+    text-decoration: underline;
 }
 
 .contact
@@ -55,31 +74,16 @@ a.underline:hover
     }
     .fa 
     {
-        font-size: 20px !important;
-        width: 20px !important;
+        font-size: 18px !important;
+        width: 18px !important;
         margin: 2% !important;
+        align-items: center !important;
         text-align: center !important;
         text-decoration: none !important;
     }
   }
 
-.fa 
-{
-    font-size: 30px !important;
-    width: 30px !important;
-    margin: 5% !important;
-    text-align: center !important;
-    text-decoration: none !important;
-  }
 
-  .fa:hover {
-    color: orangered;
-}
-
-.fa-facebook-official, .fa-google, .fa-instagram 
-{
-  color: black;
-}
 
 /* .contactform {
     box-sizing: border-box;
