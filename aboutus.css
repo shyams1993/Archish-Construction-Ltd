@@ -1,0 +1,178 @@
+body{
+    margin: auto 0;
+    height: 100%;
+}
+
+.main-nav{
+    display: flex;
+    background-color: ghostwhite;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+
+.brand{
+    margin-right: auto;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: orangered;
+    border-bottom: 4px solid orangered;
+}
+
+nav a.icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 750px) {
+    nav a:not(:first-child) {display: none;}
+    a:hover{border-bottom: none;}
+    nav a.icon {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav.responsive {
+        width: 100%;
+        background-color: ghostwhite;
+        position: fixed;
+        display: block;
+    }
+    nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
+
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.container{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    margin-top: 30px;
+}
+
+.quote{
+    /* margin: 0; */
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.070em;
+    font-size: 3em;
+    margin-bottom: 1.5rem;
+}
+
+.subcontainer{
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+
+.subquote
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 740;
+    font-size: 5em;
+    letter-spacing: -0.070em;
+    text-indent: -0.03em;
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px){
+    .subcontainer{
+        width: 90%;
+    }
+    .quote{
+        letter-spacing: -0.090em;
+        font-size: 2.40em;
+        
+    }
+
+    .subquote{
+        letter-spacing: -0.090em;
+        font-size: 4em;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 700px){
+    .subcontainer{
+        width: 75%;
+    }
+    .quote{
+        letter-spacing: -0.090em;
+        font-size: 2.25em;
+        
+    }
+
+    .subquote{
+        letter-spacing: -0.090em;
+        font-size: 3.25em;
+    }
+}
+
+@media screen and (min-width: 50px) and (max-width: 449px){
+    .subcontainer{
+        width: 65%;
+    }
+    .quote{
+        letter-spacing: -0.090em;
+        font-size: 1.80em;
+        padding-top: 12vh;
+        margin-bottom: 0.5em;
+    }
+
+    .subquote{
+        letter-spacing: -0.090em;
+        font-size: 2.45em;
+        padding-top: 0.5em;
+    }
+}
