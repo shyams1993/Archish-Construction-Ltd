@@ -1,81 +1,3 @@
-body{
-    margin: auto 0;
-    height: 100%;
-}
-
-.main-nav{
-    display: flex;
-    background-color: ghostwhite;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-}
-
-
-.brand{
-    margin-right: auto;
-}
-
-nav a{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 1em;
-    font-weight: 500;
-    color: black;
-    text-transform: uppercase;
-}
-
-a:hover{
-    color: orangered;
-    border-bottom: 4px solid orangered;
-}
-
-nav a.icon {
-    display: none;
-}
-
-
-@media screen and (max-width: 750px) {
-    nav a:not(:first-child) {display: none;}
-    a:hover{border-bottom: none;}
-    nav a.icon {
-        float: right;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 100;
-    }
-
-    nav.responsive {
-        width: 100%;
-        background-color: ghostwhite;
-        position: fixed;
-        display: block;
-    }
-    nav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 100;
-    }
-
-    nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-}
 
 
 @import url('https://rsms.me/inter/inter.css');
@@ -86,10 +8,12 @@ html { font-family: 'Inter', sans-serif; }
 
 .container{
     height: 100vh;
+    position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;    
 }
 
 header{
