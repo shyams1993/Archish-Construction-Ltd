@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbarstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Archish Construction Ltd.</title>
+</head>
+<body>
+    <nav class="main-nav" id="topNav">
+        <a class="brand" href=""><img src="logo.png" alt="" srcset=""></a>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="undermaintenance.html">Service</a>
+        <a href="undermaintenance.html">Sector</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="navToggle()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </nav>
+    
+    <header>
+    <div class="container" id="container" style="background-image: url(building2.jpg);">
+            <div class="subcontainer">
+                <p class="quote animate__animated animate__backInLeft animate__delay-1s">We build the bond with an endearing trust.</p>
+                <p class="subquote animate__animated animate__backInRight animate__delay-1s">So, sit back and relax while we deliver our promise.</p>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- <section>
+        <div class="container" style="background-image: url(building4.jpg);">
+            <div class="subcontainer">
+                <p class="quote animate__animated animate__backInLeft animate__delay-1s">We build the bond with an endearing trust.</p>
+                <p class="subquote animate__animated animate__backInRight animate__delay-1s">So, sit back and relax while we deliver our promise.</p>
+            </div>
+        </div>
+    </section> -->
+    <div style="background-image: url(building4.jpg); background-attachment: fixed; background-position: center; background-size: cover; width: 100%; max-width: 100%;">
+    <section class="container2">
+
+
+        <button class="accordion">Motto</button>
+        <div class="panel">
+          <p class="accordiontext">At Archish, we provide the highest quality professional construction services. This commitment can only be maintained through the efforts of its people. Archish Construction proudly employs dedicated staff comprising of experienced construction professionals and craftsmen. We believe that to maintain and grow this dedicated staff, we must provide a challenging role, stable and pleasant work environment, which offers them opportunities to grow both personally and professionally. </p>
+        </div>
+        
+        <button class="accordion">Safety</button>
+        <div class="panel">
+          <p class="accordiontext">Health and safety is paramount to the construction industry, that is why we are committed to the safety of our employees as well as the public and this commitment is central to everything we do. Our pro-active approach creates value for our clients and safeguards our most important asset, our employees. Our team is dedicated to maintaining a safety-focused and environmentally sound business.</p>
+        </div>
+        
+        <button class="accordion">Quality</button>
+        <div class="panel">
+          <p class="accordiontext">We provide quality construction services to our clients. The pride we have in our work and in the reputation of our company enables our clients to enjoy the construction process with confidence. We are committed to maintain the trust of our clients by treating them fairly and honestly by meeting our commitments. We have the necessary skills, training and positive attitude to do the job right the first time and to finish each task, job and project before moving on to the next. Our clients feel that their job is as important to us as it is to them.</p>
+        </div>
+        </div>
+    </section>
+</div>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+</body>
+</html>
