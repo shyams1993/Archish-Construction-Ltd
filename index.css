@@ -101,7 +101,7 @@ html { font-family: 'Inter', sans-serif; }
     text-align: center;
     font-family: 'Inter var', sans-serif;
     font-weight: 740;
-    letter-spacing: -0.055em;
+    letter-spacing: -0.075em;
     font-size: 6.5em;
     text-indent: -0.03em;
     margin-bottom: 2rem;
@@ -127,6 +127,7 @@ html { font-family: 'Inter', sans-serif; }
 
 @media screen and (max-width: 500px){
     .quote{
+        letter-spacing: -0.090em;
         font-size: 3.25em;
     }
 
