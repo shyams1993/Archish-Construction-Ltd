@@ -1,0 +1,136 @@
+body{
+    margin: auto 0;
+    overflow: hidden;
+}
+
+.main-nav{
+    display: flex;
+    background-color: ghostwhite;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+
+.brand{
+    margin-right: auto;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+
+a:hover{
+    border-bottom: 4px solid orangered;
+}
+
+nav a.icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 750px) {
+    nav a:not(:first-child) {display: none;}
+    a:hover{border-bottom: none;}
+    nav a.icon {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav.responsive {
+        width: 100%;
+        background-color: ghostwhite;
+        position: fixed;
+        display: block;
+    }
+    nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
+
+.container{
+    padding-top: 10px;
+    background-image: url(building3.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.quote
+{
+    margin: 0;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 740;
+    letter-spacing: -0.055em;
+    font-size: 6.5em;
+    text-indent: -0.03em;
+    margin-bottom: 2rem;
+    margin-top: 30px;
+}
+
+.subcontainer{
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+
+.subquote
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    letter-spacing: -0.050em;
+}
+
+@media screen and (max-width: 500px){
+    .quote{
+        font-size: 3.25em;
+    }
+
+    .subquote{
+        font-size: 1.625em;
+    }
+}
