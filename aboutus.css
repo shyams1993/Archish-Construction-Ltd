@@ -112,7 +112,7 @@ header{
 }
 
 .accordion{
-    background-color: ghostwhite;
+    background-color: rgba(248, 248, 255, 0.535);
     color: #444;
     cursor: pointer;
     padding: 18px;
