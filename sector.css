@@ -95,7 +95,7 @@ div.subbox {
 
 @media screen and (max-width: 700px){
     .mainbox{
-        padding-top: 30%;
+        padding-top: 15%;
         display: block !important;
     }
     #num1, #num2, #num3, #num4{
