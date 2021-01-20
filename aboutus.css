@@ -105,7 +105,10 @@ header{
 .container2
 {
     display: flex;
-    padding-top: 20%%;
+    justify-items: center;
+    align-content: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
 .accordion{
@@ -125,12 +128,13 @@ header{
     font-family: 'Inter var', sans-serif;
     font-weight: 740;
     font-size: 3em;
-    letter-spacing: -0.070em;
+    letter-spacing: -0.080em;
     text-indent: -0.03em;
 }
 
 .active, .accordion:hover {
-    background-color: #ccc; 
+    background-color: rgba(204, 204, 204, 0.33); 
+    color: orangered;
   }
   
   .panel {
