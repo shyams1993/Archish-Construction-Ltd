@@ -47,7 +47,7 @@ nav a.icon {
 }
 
 
-@media screen and (max-width: 922px) {
+@media screen and (max-width: 750px) {
     nav a:not(:first-child) {display: none;}
     a:hover{border-bottom: none;}
     nav a.icon {
