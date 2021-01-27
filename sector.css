@@ -1,26 +1,24 @@
 .mainbox
 {
-    color: darkslategray;
-    padding-top: 8%;
-    padding-left: 5%;
-    padding-right: 5%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; */
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    color: black;
+    display: flex;
+    padding:0;
+
+}
+
+.parallax{
+    height: 100vh;
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
 div.subbox {
-    padding-bottom: 8%;
+    /* padding-bottom: 8%;
     padding-left: 5%;
-    padding-right: 5%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;  
-    color: darkslategray;
+    padding-right: 5%; */
+    display: flex;  
+    color: black;
 }
 
 /* .mainbox #one{
@@ -34,40 +32,31 @@ div.subbox {
 } */
 
 #num1, #num3{
-    padding-top: 0;
+    padding: 20%;
     text-align: left;
     font-family: 'Inter var', sans-serif;
     font-weight: 740;
-    letter-spacing: -0.090em;
+    letter-spacing: -0.150em;
     font-size: 1.5em;
     text-indent: -0.03em;
 }
-.mainbox #one{
-    grid-column: 1/1;
-    grid-row: 1/1;
-}
-.mainbox #two{
-    grid-column: 2/2;
-    grid-row: 1/1;
-}
-.mainbox #three{
-    grid-column: 1/2;
-    grid-row: 2/2;
-}
+
 
 
 #num2, #num4{
+    padding: 20%;
     text-align: right;
     font-family: 'Inter var', sans-serif;
     font-weight: 740;
-    letter-spacing: -0.090em;
+    letter-spacing: -0.150em;
     font-size: 1.5em;
     text-indent: -0.03em;
     align-self: flex-end;
 }
 
 .num1{
-    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: left;
     font-family: 'Inter var', sans-serif;
     font-weight: 600;
@@ -76,10 +65,12 @@ div.subbox {
     text-indent: -0.03em;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .num2{
-    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: right;
     font-family: 'Inter var', sans-serif;
     font-weight: 600;
@@ -88,16 +79,15 @@ div.subbox {
     text-indent: -0.03em;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .mainbox h1, .subbox h1{
-    text-decoration:underline solid darkslategray 0.15em ;
     margin-bottom: 0;
 }
 
 @media screen and (max-width: 700px){
     .mainbox{
-        padding-top: 15%;
         display: block !important;
     }
     #num1, #num2, #num3, #num4{
