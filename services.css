@@ -99,8 +99,12 @@ div.subbox {
     .mainbox{
         display: block !important;
     }
-    #num1, #num2, #num3, #num4{
-        font-size: 1em;
+    #num1 h1, #num2 h1, #num3 h1, #num4 h1{
+        font-size: 1.5em;
     }
+
+    .num1, .num2, .num3{
+    font-size: 1.25em;
+}
 
 }
