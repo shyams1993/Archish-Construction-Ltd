@@ -10,7 +10,7 @@ body
 }
 
 .container{
-    padding-top: 10px;
+    padding-top: 5%;
     height: 100vh;
 }
 
@@ -62,4 +62,15 @@ html { font-family: 'Inter', sans-serif; }
     .subquote{
         font-size: 1.625em;
     }
+}
+
+.nextpagelink{
+    font-size: 2em;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.070em;
+}
+
+.arrowlink:hover{
+    border-bottom: none;
 }
