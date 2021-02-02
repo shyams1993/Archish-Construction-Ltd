@@ -143,3 +143,12 @@ a.underline:hover
     }
   }
 
+.brand #slogan{
+    font-family: 'Open Sans', sans serif;
+    color: black;
+    font-weight: 800;
+    letter-spacing: 0.40em;
+    font-size: 2em;
+    padding-left: 0.50em;
+}
+
