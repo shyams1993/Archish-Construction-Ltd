@@ -1,4 +1,8 @@
-body
+html{
+    scroll-behavior: smooth !important;
+}
+
+.container
 {
     background-image: url(building3.jpg);
     height: 100vh;
@@ -6,7 +10,6 @@ body
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 .container{
@@ -71,6 +74,31 @@ html { font-family: 'Inter', sans-serif; }
     letter-spacing: -0.070em;
 }
 
+
 .arrowlink:hover{
     border-bottom: none;
+}
+
+.banner{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.banner p{
+    margin: 0;
+    color: ghostwhite;
+    font-family: 'Inter var', sans-serif;
+    font-size: 6em;
+    letter-spacing: -0.060em;
+}
+
+@media screen and (max-width: 650px){
+    .banner p{
+        font-size: 4em;
+    }
 }
