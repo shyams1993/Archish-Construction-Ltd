@@ -51,7 +51,7 @@ nav a{
 
 }
 
-a:hover{
+nav a:hover{
     color: orangered;
     border-bottom: 4px solid orangered;
 }
